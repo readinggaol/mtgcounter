@@ -4,4 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnUpScore1"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#fe7631"
+        android:textSize="30sp"
+        android:text="+1"
+
+        app:layout_constraintBottom_toTopOf="@+id/btnDownScore1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnDownScore1"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:textSize="30sp"
+        android:backgroundTint="#fe7631"
+        android:text="-1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnDownScore2"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:textSize="30sp"
+        android:text="-1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnUpScore2"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:textSize="30sp"
+        android:text="+1"
+        app:layout_constraintBottom_toTopOf="@+id/btnDownScore2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDisplayScore1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnUpScore1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDisplayScore2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="80sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/btnUpScore2"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
